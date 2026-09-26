@@ -3,7 +3,7 @@
 > **Status: PHASE 00 — Initialization & Governance (ACTIVE). No application code exists yet.**
 
 An academically rigorous **Traffic and Transport Management System**, built as a
-Fourth-Year Information Technology project for the course
+ Information Technology project
 **Systems Integration and Architecture**.
 
 **Repository:** https://github.com/AbdullahMaresh9/Traffic-and-Transport-Management-System.git
