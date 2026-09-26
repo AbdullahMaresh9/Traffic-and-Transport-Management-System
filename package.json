@@ -1,0 +1,22 @@
+{
+  "name": "traffic-and-transport-management-system",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Traffic and Transport Management System — academic project (Fourth-Year IT, Systems Integration and Architecture). Phase 00: governance tooling only; no application code yet.",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbdullahMaresh9/Traffic-and-Transport-Management-System.git"
+  },
+  "scripts": {
+    "validate": "python senior-rules/validators/validate.py ."
+  },
+  "keywords": [
+    "traffic-management",
+    "transport-management",
+    "systems-integration",
+    "architecture",
+    "academic-project"
+  ],
+  "note": "No dependencies are declared. The application toolchain (build/lint/test/coverage) is intentionally deferred to Phase 03 — see RULES_HINTS.md section 3, where each command is marked NOT YET AVAILABLE - PHASE 00."
+}

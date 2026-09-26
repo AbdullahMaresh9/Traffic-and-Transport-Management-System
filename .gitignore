@@ -1,0 +1,38 @@
+# --- Secrets (SEC-01: never commit, day zero) ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# --- Dependencies / builds (none exist yet; declared for Phase 03+) ---
+node_modules/
+dist/
+build/
+out/
+.next/
+coverage/
+.venv/
+vendor/
+
+# --- Python (validator tooling) ---
+__pycache__/
+*.pyc
+*.pyo
+
+# --- Logs & temp ---
+*.log
+npm-debug.log*
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# --- Rule-system backups (created by the ADMR installer; never commit) ---
+senior-rules-backup/
+.ai-rules-backup/
