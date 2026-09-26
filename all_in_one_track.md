@@ -123,7 +123,8 @@
 **You are here: M0 (Phase 00) — `PASSED` (`GO`, 41/41).** `M1`/Phase 01 is next but must
 not start without explicit user instruction. Deferred, still open: `F-005` → 01,
 `F-006` → 01/02, `F-012` → 03.
-Next milestone: **M1 (Phase 01)** — do not start it until Phase 00's gate is resolved.
+Next milestone: **M1 (Phase 01)** — Phase 00's gate is resolved (`GO`); M1 starts only on
+explicit user instruction.
 
 ---
 

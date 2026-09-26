@@ -199,7 +199,7 @@ A phase is `PASSED` only on `GO`, with evidence linked here.
 | 33 | Requirements/architecture foundations initialized (`01`, `09`, `10`, `11`, `12`, `14`, `15`) — context/questions/proposed structure only | `PASS` | Files present, labelled |
 | **G. Phase registry (3)** ||||
 | 34 | 9 phase folders each with `TODO.md`, `PLAN.md`, `AUDIT.md`, `_index.md` | `PASS` | `docs/phases/` — 36 files; validator links green |
-| 35 | Active phase clearly identified | `PASS` | `development_phases_entry.md`: PH-00 `ACTIVE` |
+| 35 | Active phase clearly identified | `PASS` | `development_phases_entry.md`: PH-00 `ACTIVE` (at evaluation time — PH-00 is now `PASSED`) |
 | 36 | 16 CORE-03 artifacts mapped for Phase 00 (`CREATED`/`PARTIAL`/`NOT APPLICABLE` + reasons) | `PASS` | `phase-00-initialization/_index.md` |
 | **H. Session tracking (2)** ||||
 | 37 | `docs/sessions/session-001.md` with work log & raw evidence | `PASS` | `session-001` |

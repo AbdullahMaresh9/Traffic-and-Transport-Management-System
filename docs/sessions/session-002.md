@@ -115,9 +115,26 @@ Applicable-to-Phase-00 unresolved `CRITICAL`/`HIGH`: **0**.
 - **Phase 03:** CI/CD · secret scanning · dependency scanning · testing infrastructure ·
   technical foundation (`docs/phases/phase-03-foundation/TODO.md`, `F-012`, `F-008`)
 
-## 7. Git evidence
+## 7. Git evidence (captured at session 002 close)
 
-<!-- GIT_SESSION002 -->
+```text
+$ git status --short
+(clean — no output)
+
+$ git status --short --branch
+## main...origin/main [ahead 1]
+
+$ git log --oneline -3
+071865a docs(phase-00): restore verbatim whiteboard methodology appendix and reconcile audit scope
+21d6175 docs(phase-00): initialize governance, rules, docs architecture and phase tracking
+
+$ git log --oneline -1 origin/main
+21d6175 docs(phase-00): initialize governance, rules, docs architecture and phase tracking
+```
+
+- Session 002 commit: **`071865a`** (local, working tree clean).
+- Push status: **not pushed by this project** — local `main` ahead of the remote-tracking
+  ref `origin/main` (`21d6175`) by 1 commit; pushing requires explicit user approval.
 
 ## 8. Status report (COM-03)
 

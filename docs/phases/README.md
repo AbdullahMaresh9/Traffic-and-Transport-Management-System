@@ -18,7 +18,7 @@
 
 | Phase | Folder | Status | Index |
 |---|---|---|---|
-| 00 | [`phase-00-initialization/`](phase-00-initialization/_index.md) | **`ACTIVE`** — exit gate `BLOCKED` | [`_index.md`](phase-00-initialization/_index.md) |
+| 00 | [`phase-00-initialization/`](phase-00-initialization/_index.md) | **`PASSED`** — exit gate `GO` (41/41) | [`_index.md`](phase-00-initialization/_index.md) |
 | 01 | [`phase-01-analysis/`](phase-01-analysis/_index.md) | `NOT STARTED` ← next | [`_index.md`](phase-01-analysis/_index.md) |
 | 02 | [`phase-02-architecture/`](phase-02-architecture/_index.md) | `NOT STARTED` | [`_index.md`](phase-02-architecture/_index.md) |
 | 03 | [`phase-03-foundation/`](phase-03-foundation/_index.md) | `NOT STARTED` | [`_index.md`](phase-03-foundation/_index.md) |

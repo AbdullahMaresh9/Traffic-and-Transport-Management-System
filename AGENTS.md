@@ -61,7 +61,8 @@ Specialized agent roles live in `.opencode/agents/` (`architect`,
 
 ## Scope fence in force RIGHT NOW
 
-**PHASE 00 IS ACTIVE. NO APPLICATION BUSINESS FUNCTIONALITY MAY BE CREATED.**
+**PHASE 00 HAS PASSED (`GO`, 41/41). PHASE 01 IS `NOT STARTED` (awaiting explicit user
+instruction). NO APPLICATION BUSINESS FUNCTIONALITY MAY BE CREATED.**
 
 Forbidden until Phase 01 *and* Phase 02 exit gates have explicitly passed
 (`RULES_HINTS.md` SYS-01 / SYS-08):

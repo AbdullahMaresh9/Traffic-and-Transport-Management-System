@@ -36,7 +36,9 @@ this is an `ASSUMPTION` or an `OPEN QUESTION` and must be labelled as such.
 
 ## 3. What phase is active?
 
-**PHASE 00 — INITIALIZATION & GOVERNANCE is ACTIVE.**
+**PHASE 00 — INITIALIZATION & GOVERNANCE: `PASSED` (exit gate `GO`, 41/41).
+PHASE 01 — REQUIREMENTS & DOMAIN ANALYSIS: `NOT STARTED` — the next controlled task,
+awaiting explicit user instruction. No phase is currently `ACTIVE`.**
 
 | Phase | Name | Status |
 |---|---|---|
@@ -171,7 +173,8 @@ Resume prompt (paste-ready, per `senior-rules/core/02_sessions_and_recovery.md`)
 ```
 RESUME PROMPT — paste into new session:
 Read ENTRY.md, RULES.md, RULES_HINTS.md, session_track.md, and development_phases_entry.md.
-Continue from session 002 (docs/sessions/session-002.md); session 001 = Phase 00 bootstrap.
+Continue from session 003 (docs/sessions/session-003.md); 001 = Phase 00 bootstrap,
+002 = reconciliation, 003 = consistency cleanup.
 Next task: PHASE 01 — Requirements & Domain Analysis (docs/phases/phase-01-analysis/TODO.md)
   — requires explicit user instruction; do not start automatically.
 Last completed: PHASE 00 — Initialization & Governance, status PASSED (GO, 41/41) after

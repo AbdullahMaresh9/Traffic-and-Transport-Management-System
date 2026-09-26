@@ -72,6 +72,36 @@ Governing rule: `DOC-06`, `VCS-05`.
 
 ---
 
+## [0.1.2] — 2026-09-26 (Phase 00 final consistency cleanup)
+
+### Changed
+
+- Normalized every active-status record to the canonical Phase 00 state (`PASSED` · gate
+  `GO` (41/41) · `F-004`/`BLK-01` `FIXED`/`CLOSED` · `F-005`·`F-006`·`F-012` `DEFERRED BY
+  PHASE DESIGN` · validator `PASS` · no application code · Phase 01 `NOT STARTED`):
+  `ENTRY.md` §3, `AGENTS.md` scope fence, `memory.md` current-state table + resume point,
+  `docs/phases/README.md`, `all_in_one_track.md`, and the 8 phase `TODO.md` headers
+  (`Active phase: PH-00` → `Phase state: PH-00 PASSED · PH-01 NOT STARTED`).
+- Historical records **kept and labeled, never deleted**: `docs/sessions/session-001.md`
+  (header status, Run-2 heading, findings list, §12 resume prompt), `phase-00 AUDIT.md`
+  check-35 evidence annotated "(at evaluation time)", raw validator runs 1–3 untouched.
+- `docs/sessions/session-002.md` §7 git-evidence placeholder filled with the raw output
+  captured at its close.
+
+### Added
+
+- `docs/sessions/session-003.md` — consistency-cleanup session evidence; `session_track.md`
+  row 003 and naming-table entry.
+
+### Validation
+
+- `python senior-rules/validators/validate.py .` → `RESULT: PASS`, exit `0` (raw output in
+  `docs/sessions/session-003.md` §6).
+- `git diff --check` → exit `0`, no whitespace errors (only autocrlf LF→CRLF notices).
+- Duplicate-heading scan across all `.md` → no duplicates. New local commit; **no push**.
+
+---
+
 ## [0.1.1] — 2026-09-26 (Phase 00 final reconciliation)
 
 ### Added

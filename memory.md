@@ -49,13 +49,13 @@ production-infrastructure complexity.
 
 | Field | Value |
 |---|---|
-| Active phase | **PHASE 00 — Initialization & Governance** |
-| Phase 00 status | See `development_phases_entry.md` (authoritative) |
+| Active phase | **None.** PH-00 `PASSED` (`GO`, 41/41); PH-01 `NOT STARTED` — next controlled task, awaiting explicit user instruction |
+| Phase 00 status | **`PASSED`** (`GO`, 41/41 — reconciled 2026-09-26); authoritative copy: `development_phases_entry.md` |
 | Application code | **None.** Zero application source, manifests, containers, databases. |
 | Repository state | Initialized; governance baseline committed on `main` |
 | Accepted ADRs | **0** — every technical choice remains `PROPOSED` |
 | Confirmed business requirements | **0** |
-| Session | 001 — see `docs/sessions/session-001.md` |
+| Session | 003 (latest) — see `docs/sessions/session-003.md` (001 = bootstrap, 002 = reconciliation) |
 
 **In force right now:** `RULES_HINTS.md` SYS-01 / SYS-08 — no application business
 functionality until Phase 01 **and** Phase 02 exit gates have both explicitly passed.
@@ -220,8 +220,8 @@ Full list with owners: `docs/01-requirements.md` §Open Questions, `architecture
    — **never trust the previous session's claims**; verify against the repo (`core/02` §2.4).
 7. Determine `DONE` / `REMAINING` / `BLOCKED`, pick one scope, execute only that scope.
 
-**Current resume point:** `docs/sessions/session-001.md` · next task = **PHASE 01 —
-Requirements & Domain Analysis** (do not start automatically during Phase 00).
+**Current resume point:** `docs/sessions/session-003.md` · next task = **PHASE 01 —
+Requirements & Domain Analysis** (requires explicit user instruction before it starts).
 
 **Known blocker, re-checked:** `BLK-01` — **`CLOSED`** (appendix restored verbatim; see
 *Permanent Project Management Methodology* + `Audit.md` `F-004`). Remaining Phase 00-relevant

@@ -2,7 +2,7 @@
 
 > Status: **`NOT STARTED`** — this phase has not begun; every box is unchecked (`GEN-02`).
 > Dependencies: `PH-04` (must be `PASSED`) must be `PASSED` first.
-> Phase ID: `PH-06` · Slug: `phase-06-reporting-ui` · Active phase: `PH-00` (`../../../ENTRY.md`)
+> Phase ID: `PH-06` · Slug: `phase-06-reporting-ui` · Phase state: `PH-00` `PASSED` · `PH-01` `NOT STARTED` (`../../../ENTRY.md`)
 
 ---
 

@@ -14,6 +14,7 @@
 |---|---|---|---|---|---|---|---|
 | 001 | 2026-09-26 | `CLOSED` (superseded by 002) | 00 | Phase 00 bootstrap: repo inspection & clone, 3-source analysis, `senior-rules/` vendoring, `RULES_HINTS.md`, root governance set, `docs/` architecture, 9 phase dirs, `.opencode/`, traceability init, validator run | Reconciliation of `BLK-01` + gate recalculation | `BLK-01` open **at that time** (appendix text unavailable) | [`docs/sessions/session-001.md`](docs/sessions/session-001.md) |
 | 002 | 2026-09-26 | **`CLOSED`** | 00 (reconciliation) | Verbatim appendix restored into `memory.md` (`BLK-01`/`F-004` closed); `F-005`/`F-006`/`F-012` reclassified `DEFERRED BY PHASE DESIGN`; gate criterion 41 re-scoped to "applicable to Phase 00"; gate recalculated **41/41 `PASS` → `GO` → Phase 00 `PASSED`**; validator `PASS`; synced 10 governance docs; committed locally | **PHASE 01 — Requirements & Domain Analysis** (explicit user instruction required) | None for Phase 00; `F-005`/`F-006`/`F-012` deferred (visible in `Audit.md` §3.1) | [`docs/sessions/session-002.md`](docs/sessions/session-002.md) |
+| 003 | 2026-09-26 | **`CLOSED`** | 00 (consistency cleanup) | Repo-wide stale-status sweep; 9 active-status records normalized to canonical state (`ENTRY`, `AGENTS`, `memory`, phases index, track, 8 phase TODOs); session-001 evidence labeled historical; duplicate scan (0 duplicates); appendix verified present; validator `PASS` | **PHASE 01 — Requirements & Domain Analysis** (explicit user instruction required) | None for Phase 00; `F-005`/`F-006`/`F-012` deferred (`Audit.md` §3.1) | [`docs/sessions/session-003.md`](docs/sessions/session-003.md) |
 
 ---
 
@@ -24,7 +25,7 @@
 | **Session Number** | `001` |
 | **Date** | 2026-09-26 |
 | **Current Phase** | `PH-00` — Initialization & Governance → **`PASSED` (`GO`, 41/41)** |
-| **Current Status** | `CLOSED` — reconciled 2026-09-26 in session 002; see below and [`docs/sessions/session-002.md`](docs/sessions/session-002.md) |
+| **Current Status** | `CLOSED` — finalized 2026-09-26 in session 003; see below and [`docs/sessions/session-003.md`](docs/sessions/session-003.md) |
 | **Completed Work** | See [`docs/sessions/session-001.md`](docs/sessions/session-001.md) work log + [`session-002.md`](docs/sessions/session-002.md) reconciliation; summarized in `ENTRY.md` §4 |
 | **Remaining Work** | Phase 01 (awaiting user instruction). Deferred findings re-evaluated at their target phases: `F-005` (01), `F-006` (01/02), `F-012` (03) |
 | **Blockers** | **None for Phase 00.** `BLK-01` **closed** 2026-09-26 — verbatim appendix restored into `memory.md` with provenance record (`Audit.md` `F-004` `FIXED`) |
@@ -40,7 +41,8 @@
 ```
 RESUME PROMPT — paste into new session:
 Read ENTRY.md, RULES.md, RULES_HINTS.md, session_track.md, and development_phases_entry.md.
-Continue from session 002 (docs/sessions/session-002.md); session 001 = Phase 00 bootstrap.
+Continue from session 003 (docs/sessions/session-003.md); 001 = bootstrap, 002 = reconciliation,
+003 = consistency cleanup.
 Next task: PHASE 01 — Requirements & Domain Analysis (docs/phases/phase-01-analysis/TODO.md)
   — requires explicit user instruction; do not start automatically.
 Last completed: PHASE 00 — Initialization & Governance, status PASSED (GO, 41/41) after
@@ -76,7 +78,8 @@ session file (`SES-03`).
 |---|---|
 | 001 | [`docs/sessions/session-001.md`](docs/sessions/session-001.md) |
 | 002 | [`docs/sessions/session-002.md`](docs/sessions/session-002.md) |
-| 003+ | *not yet created* |
+| 003 | [`docs/sessions/session-003.md`](docs/sessions/session-003.md) |
+| 004+ | *not yet created* |
 
 ---
 

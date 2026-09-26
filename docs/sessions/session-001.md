@@ -7,7 +7,7 @@
 | Active phase | `PH-00` Initialization & Governance (`development_phases_entry.md`) |
 | Rules | `senior-rules/` v`2.0.0` + root `RULES_HINTS.md` |
 | Scope executed | Phase 00 only — **no application business functionality** (`SYS-01`) |
-| Session status | `BLOCKED` — execution `DONE`, exit gate `NO-GO` (`AUDIT.md` §5) |
+| Session status | `CLOSED` (historical record) — at session end: `BLOCKED`, execution `DONE`, exit gate `NO-GO` (as evaluated then; **superseded by session 002**: gate `GO`, Phase 00 `PASSED`) |
 | Track row | `session_track.md` → session `001` |
 
 ---
@@ -127,7 +127,7 @@ Run-1 finding categories (from the captured output):
 5. Targets not yet created (`docs/sessions/session-001.md`, phase-00 `AUDIT.md`) — 11
    findings.
 
-### Run 2 — after remediation (final)
+### Run 2 — after remediation (final as of session 001; a later run 3 exists in the phase `AUDIT.md` §6)
 
 ```text
 ADMR validator - repo: D:\IT-Level-4\IT-Level4-part1\project\Traffic-and-Transport-Management-System
@@ -171,6 +171,10 @@ RESULT: PASS - structure healthy
 ---
 
 ## 8. Findings raised this session
+
+*(Statuses below are **as raised at that time**; the current register is
+[`../../Audit.md`](../../Audit.md) §3 — `F-004` is now `FIXED`, `F-005`/`F-006`/`F-012` are
+`DEFERRED BY PHASE DESIGN`.)*
 
 `F-001` (`MEDIUM`, accepted alias) · `F-002` (`HIGH`, **FIXED**) · `F-003` (`MEDIUM`, open
 — user decision) · **`F-004` (`CRITICAL`, `BLOCKED` = `BLK-01`)** · `F-005` (`HIGH`, →
@@ -225,6 +229,9 @@ Phase 00 `BLOCKED` state or supplies `BLK-01` input. Push to `origin/main` only 
 user approval.
 
 ## 12. Resume prompt (paste for session 002) — *historical; the live prompt is now in `session_track.md`*
+
+> **Historical — already executed.** Session 002 restored the appendix and closed
+> `BLK-01`/`F-004`. Do **not** act on the prompt below; it is retained as evidence only.
 
 ```text
 Resume TTMS project — session 002. Read ENTRY.md, session_track.md (row 001 = this file),
