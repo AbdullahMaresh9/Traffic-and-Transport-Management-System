@@ -98,7 +98,9 @@ Governing rule: `DOC-06`, `VCS-05`.
 - `python senior-rules/validators/validate.py .` → `RESULT: PASS`, exit `0` (raw output in
   `docs/sessions/session-003.md` §6).
 - `git diff --check` → exit `0`, no whitespace errors (only autocrlf LF→CRLF notices).
-- Duplicate-heading scan across all `.md` → no duplicates. New local commit; **no push**.
+- Duplicate-heading scan across all `.md` → no duplicates. Committed locally; **push
+  approved and executed 2026-09-27** (fast-forward, no force — record in
+  `docs/sessions/session-003.md` §7).
 
 ---
 

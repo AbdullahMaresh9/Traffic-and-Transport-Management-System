@@ -137,8 +137,8 @@ $ git diff --stat   (18 tracked files)
  (+ new file docs/sessions/session-003.md, untracked at capture time)
 ```
 
-- Push status: **this project performed no push** — only read-only inspection
-  (`git ls-remote`, `git fetch`).
+- Push status at capture time: **this project performed no push** — only read-only
+  inspection (`git ls-remote`, `git fetch`). *(Superseded by the Resolution below.)*
 
 ### Remote state discovered read-only (material for the next session)
 
@@ -167,6 +167,23 @@ two commits the remote lacks (`071865a`, plus this cleanup commit). **Consequenc
 future pull/merge will likely conflict in `README.md` (both sides modified it). Resolving
 divergence is a **user decision** — nothing was pulled into, pushed to, or rewritten on the
 remote here.
+
+### Resolution (2026-09-27 — user-approved push)
+
+- User explicitly approved pushing the Phase 00 work to this repository.
+- Pre-push gap closed: `README.md` line 3 header `(ACTIVE)` → `(PASSED — exit gate GO,
+  41/41)` — a stale record the cleanup sweep's patterns had missed; caught by a final
+  `ACTIVE` grep before pushing.
+- `git merge origin/main` → **clean auto-merge** of `aba3f08`; the user's remote README
+  edit (line 6) preserved verbatim, no conflict (local README edits were lines 152–161).
+- Re-validated **before pushing**: validator `RESULT: PASS` (exit `0`); `git diff --check`
+  exit `0`.
+- `git push origin main` → `aba3f08..23ec8ef main -> main` (**fast-forward**, no force).
+  First pushed state: remote `main` = `23ec8ef`.
+- Verified after push: `git ls-remote origin refs/heads/main` == local `HEAD` ==
+  `23ec8ef`; `git status --short --branch` → `## main...origin/main` (in sync, clean tree).
+- All "no push" statements above are true **as of their capture time**; this block is the
+  authoritative push record.
 
 ## 8. Status report (COM-03)
 
