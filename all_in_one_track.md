@@ -27,7 +27,7 @@
 | **Phase** | [PH-00 — Initialization & Governance](development_phases_entry.md) |
 | **Artifacts** | [Phase 00 TODO](docs/phases/phase-00-initialization/TODO.md) · [PLAN](docs/phases/phase-00-initialization/PLAN.md) · [AUDIT](docs/phases/phase-00-initialization/AUDIT.md) |
 | **Delivers** | Repo init, governance set, docs architecture, `.opencode/`, `senior-rules/`, `RULES_HINTS.md`, phase + session tracking, traceability structure |
-| **Status** | 🟦 Active · ⛔ exit gate `BLOCKED` by `BLK-01` (verbatim appendix not supplied) |
+| **Status** | 🟩 Phase 00 `PASSED` (`GO`, 41/41 — reconciled 2026-09-26) · next `M1`/Phase 01 awaits user instruction |
 | **Evidence** | [session-001](docs/sessions/session-001.md) |
 
 ## M1 — Requirements baseline ⬜
@@ -120,7 +120,9 @@
 
 ## Current position
 
-**You are here: M0 (Phase 00) — active, exit gate `BLOCKED`.**
+**You are here: M0 (Phase 00) — `PASSED` (`GO`, 41/41).** `M1`/Phase 01 is next but must
+not start without explicit user instruction. Deferred, still open: `F-005` → 01,
+`F-006` → 01/02, `F-012` → 03.
 Next milestone: **M1 (Phase 01)** — do not start it until Phase 00's gate is resolved.
 
 ---

@@ -192,6 +192,14 @@ Full register with evidence: [`../../Audit.md`](../../Audit.md); Phase 00 view:
 | — | Commit locally; **ask before push** (user instruction this session) | `CONFIRMED` |
 | — | `memory.md` methodology section kept `BLOCKED`, nothing fabricated (user choice this session) | `CONFIRMED` |
 
+> ⚠️ **ADDENDUM (2026-09-26, session 002 — Phase 00 final reconciliation):** the blockers
+> in §10 and the status in §11–§12 below were accurate **at the time session 001 ended** and
+> are kept as history. Superseded by session 002: **`BLK-01`/`F-004` → `CLOSED`/`FIXED`**
+> (appendix restored verbatim into `memory.md` with provenance record); `F-005`/`F-006`/
+> `F-012` → **`OPEN — DEFERRED BY PHASE DESIGN`** (Phases 01 / 01-02 / 03, `Audit.md` §3.1);
+> **Phase 00 gate recalculated 41/41 `PASS` → `GO` → `PASSED`.** Current truth:
+> [`session-002.md`](session-002.md).
+
 ## 10. Blockers
 
 | ID | Blocker | Needs |
@@ -202,7 +210,7 @@ Full register with evidence: [`../../Audit.md`](../../Audit.md); Phase 00 view:
 | `F-012` (`HIGH`) | No CI/scanner/hooks | Phase 03 Technical Foundation |
 | `F-003` (`MEDIUM`) | Rules version discrepancy 2.0.0 vs 2.1.0 | User decision: pin or upgrade |
 
-## 11. Status report (COM-03)
+## 11. Status report (COM-03) — *as of session 001 end; superseded by session 002*
 
 **Done:** full Phase 00 scope — repo, governance, docs architecture, AI skills, rules
 integration, OpenCode config, phase & session tracking, foundations, validation (final run
@@ -216,7 +224,7 @@ deferred `HIGH` findings are open (gate check 41 `FAIL`, `AUDIT.md` §5).
 Phase 00 `BLOCKED` state or supplies `BLK-01` input. Push to `origin/main` only on explicit
 user approval.
 
-## 12. Resume prompt (paste for session 002)
+## 12. Resume prompt (paste for session 002) — *historical; the live prompt is now in `session_track.md`*
 
 ```text
 Resume TTMS project — session 002. Read ENTRY.md, session_track.md (row 001 = this file),

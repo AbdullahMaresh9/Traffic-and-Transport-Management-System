@@ -67,8 +67,39 @@ Governing rule: `DOC-06`, `VCS-05`.
 
 ### Known at initialization
 
-- `BLK-01` / `F-004` (`CRITICAL`) — the required verbatim "PROJECT WHITEBOARD METHODOLOGY" appendix was not supplied; the `memory.md` section is present and marked `BLOCKED`.
+- `BLK-01` / `F-004` (`CRITICAL`) — the required verbatim "PROJECT WHITEBOARD METHODOLOGY" appendix was not supplied; the `memory.md` section is present and marked `BLOCKED`. **[resolved in 0.1.1 — see below]**
 - `F-005`, `F-006`, `F-012` (`HIGH`) — open, deferred to Phases 01 and 03 by design.
+
+---
+
+## [0.1.1] — 2026-09-26 (Phase 00 final reconciliation)
+
+### Added
+
+- `memory.md` → *Permanent Project Management Methodology* now contains the complete
+  **APPENDIX: PROJECT WHITEBOARD METHODOLOGY** verbatim (no summary, no paraphrase, nothing
+  invented), with a provenance & verbatim-integrity record.
+- `Audit.md` §3.1 — deferral specifications (`target phase · owner · rationale ·
+  required-by gate · re-evaluation trigger`) for `F-005`, `F-006`, `F-012`, classified
+  **`DEFERRED BY PHASE DESIGN`** (not fixed, not Phase 00 failures).
+- `docs/sessions/session-002.md` — reconciliation session evidence.
+
+### Changed
+
+- `F-004` → `FIXED`; `BLK-01` → `CLOSED`.
+- Phase 00 exit-gate criterion 41 reworded to *"No unresolved `CRITICAL`/`HIGH` findings
+  **applicable to Phase 00**"* (project-level phase-scope interpretation; `senior-rules/`
+  unchanged, `ADP-03` respected).
+- Phase 00 gate recalculated: **41/41 `PASS` → `GO` → status `PASSED`** (registry,
+  `ENTRY.md`, `README.md`, `all_in_one_track.md`, phase `TODO`/`PLAN`/`AUDIT`/`_index`
+  synchronized — audit & memory consistent).
+- DOD gates G6/G9: manual halves `PASS`; automated enforcement (scanner/CI) `DEFERRED →
+  F-012` (Phase 03).
+
+### Validation
+
+- `python senior-rules/validators/validate.py .` → `RESULT: PASS` (raw output in
+  `docs/phases/phase-00-initialization/AUDIT.md` §6, run 3). No push performed.
 
 ---
 

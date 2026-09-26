@@ -151,12 +151,13 @@ evidence) · `READY-FOR-REVIEW`. Never "should be working".
 
 | Phase | Status |
 |---|---|
-| **00 — Initialization & Governance** | **`ACTIVE`**, exit gate **`BLOCKED`** |
-| 01 — Requirements & Domain Analysis | `NOT STARTED` — **next controlled task** |
+| **00 — Initialization & Governance** | **`PASSED`**, exit gate **`GO` (41/41)** |
+| 01 — Requirements & Domain Analysis | `NOT STARTED` — **next controlled task** (await user instruction) |
 | 02–08 | `NOT STARTED` |
 
-Known blockers: `BLK-01` (verbatim methodology appendix not supplied), plus `HIGH` findings
-`F-005`, `F-006` (Phase 01) and `F-012` (Phase 03). Full detail: [`Audit.md`](Audit.md).
+Known blockers: **none for Phase 00** (`BLK-01` closed 2026-09-26 — appendix restored
+verbatim). Deferred, still open: `F-005` → Phase 01, `F-006` → Phase 01/02,
+`F-012` → Phase 03 (`Audit.md` §3.1).
 
 ## How to resume the project
 

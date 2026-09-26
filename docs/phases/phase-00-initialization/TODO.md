@@ -119,18 +119,20 @@
 - [x] **G3 Tests:** `NOT APPLICABLE — PHASE 00` (0 tests; no runner)
 - [x] **G4 Coverage:** `NOT APPLICABLE — PHASE 00` (not measurable)
 - [x] **G5 Dead-element scan:** `NOT APPLICABLE — PHASE 00`
-- [x] **G6 Security:** repository secret scan by inspection → **0 secrets committed**; **`INCOMPLETE`** — no scanner exists (`F-012`, `HIGH`)
+- [x] **G6 Security:** repository secret inspection → **0 secrets committed**; automated scanner **`DEFERRED → F-012` (Phase 03)** — out of Phase 00 scope
 - [x] **G7 Performance:** `NOT APPLICABLE — PHASE 00`
 - [x] **G8 Docs:** artifacts created and interlinked → validator `PASS` on links and entry files
-- [x] **G9 Git:** conventional commit created on `main`; **no CI exists** (`F-012`) → `INCOMPLETE` on the CI half
+- [x] **G9 Git:** conventional commit created on `main`, no push without approval; CI enforcement **`DEFERRED → F-012` (Phase 03)**
 
 ## Status
 
-**`BLOCKED`** — gate **G6/G9 `INCOMPLETE`** (`F-012`, scheduled to Phase 03) and finding
-`F-004` / `BLK-01` (`CRITICAL`) is awaiting an external input.
+**`PASSED` — exit gate `GO` (41/41 checks `PASS`, `AUDIT.md` §5), recalculated 2026-09-26.**
 
-Per `DOD-10`, a task failing any gate is reported as **incomplete with the failing gate
-named**. Phase 00 is therefore **not** `COMPLETE`.
+- `BLK-01` / `F-004` (`CRITICAL`) → **`CLOSED` / `FIXED`** — verbatim appendix restored in `memory.md`.
+- `F-005`, `F-006`, `F-012` (`HIGH`) → **`OPEN — DEFERRED BY PHASE DESIGN`** (Phases 01, 01/02, 03), each with
+  target phase, owner, rationale and required-by gate in root `Audit.md` §3.1. **None is claimed fixed;
+  none is applicable to Phase 00.**
+- Validator: `PASS` (raw output in `AUDIT.md` §6, run 3).
 
 **Next task:** `PHASE 01 — REQUIREMENTS & DOMAIN ANALYSIS`
-(`docs/phases/phase-01-analysis/TODO.md`) — do not start until the Phase 00 gate is resolved.
+(`docs/phases/phase-01-analysis/TODO.md`) — **do not start without explicit user instruction.**

@@ -12,7 +12,8 @@
 
 | # | Date | Status | Phase | Tasks completed | Next task | Blockers | Session file |
 |---|---|---|---|---|---|---|---|
-| 001 | 2026-09-26 | **`BLOCKED`** | 00 (ACTIVE) | Phase 00 bootstrap: repo inspection & clone, 3-source analysis, `senior-rules/` vendoring, `RULES_HINTS.md`, root governance set, `docs/` architecture, 9 phase dirs, `.opencode/`, traceability init, validator run | **PHASE 01 — Requirements & Domain Analysis** (do not start automatically) | `BLK-01` verbatim appendix text not supplied; `F-005`/`F-006`/`F-012` (`HIGH`) deferred to Phases 01/03 | [`docs/sessions/session-001.md`](docs/sessions/session-001.md) |
+| 001 | 2026-09-26 | `CLOSED` (superseded by 002) | 00 | Phase 00 bootstrap: repo inspection & clone, 3-source analysis, `senior-rules/` vendoring, `RULES_HINTS.md`, root governance set, `docs/` architecture, 9 phase dirs, `.opencode/`, traceability init, validator run | Reconciliation of `BLK-01` + gate recalculation | `BLK-01` open **at that time** (appendix text unavailable) | [`docs/sessions/session-001.md`](docs/sessions/session-001.md) |
+| 002 | 2026-09-26 | **`CLOSED`** | 00 (reconciliation) | Verbatim appendix restored into `memory.md` (`BLK-01`/`F-004` closed); `F-005`/`F-006`/`F-012` reclassified `DEFERRED BY PHASE DESIGN`; gate criterion 41 re-scoped to "applicable to Phase 00"; gate recalculated **41/41 `PASS` → `GO` → Phase 00 `PASSED`**; validator `PASS`; synced 10 governance docs; committed locally | **PHASE 01 — Requirements & Domain Analysis** (explicit user instruction required) | None for Phase 00; `F-005`/`F-006`/`F-012` deferred (visible in `Audit.md` §3.1) | [`docs/sessions/session-002.md`](docs/sessions/session-002.md) |
 
 ---
 
@@ -22,11 +23,11 @@
 |---|---|
 | **Session Number** | `001` |
 | **Date** | 2026-09-26 |
-| **Current Phase** | `PH-00` — Initialization & Governance (`ACTIVE`) |
-| **Current Status** | `BLOCKED` — Phase 00 exit gate not fully passable; see below |
-| **Completed Work** | See [`docs/sessions/session-001.md`](docs/sessions/session-001.md) work log; summarized in `ENTRY.md` §4 |
-| **Remaining Work** | `BLK-01` closure; Phase 00 exit-gate re-verification once unblocked; then Phase 01 |
-| **Blockers** | `BLK-01` — the required verbatim "APPENDIX: PROJECT WHITEBOARD METHODOLOGY" was not included in the Phase 00 instruction and does not exist in any source repo (`Audit.md` `F-004`). Unblocks when the user supplies the text. |
+| **Current Phase** | `PH-00` — Initialization & Governance → **`PASSED` (`GO`, 41/41)** |
+| **Current Status** | `CLOSED` — reconciled 2026-09-26 in session 002; see below and [`docs/sessions/session-002.md`](docs/sessions/session-002.md) |
+| **Completed Work** | See [`docs/sessions/session-001.md`](docs/sessions/session-001.md) work log + [`session-002.md`](docs/sessions/session-002.md) reconciliation; summarized in `ENTRY.md` §4 |
+| **Remaining Work** | Phase 01 (awaiting user instruction). Deferred findings re-evaluated at their target phases: `F-005` (01), `F-006` (01/02), `F-012` (03) |
+| **Blockers** | **None for Phase 00.** `BLK-01` **closed** 2026-09-26 — verbatim appendix restored into `memory.md` with provenance record (`Audit.md` `F-004` `FIXED`) |
 | **Decisions** | `DEC-001` selective ADMR vendoring · `DEC-002` `mindmap.md` canonical + `mind_map.md` alias · `DEC-003` authority hierarchy · `DEC-004` pin rules `2.0.0` (proposed) · `DEC-005` 9-phase SDLC model · `DEC-006` all architecture stays `PROPOSED` |
 | **Validation Evidence** | Validator raw output captured in [`docs/phases/phase-00-initialization/AUDIT.md`](docs/phases/phase-00-initialization/AUDIT.md) §6 |
 | **Next Task** | **PHASE 01 — REQUIREMENTS & DOMAIN ANALYSIS** → start at [`docs/phases/phase-01-analysis/TODO.md`](docs/phases/phase-01-analysis/TODO.md) |
@@ -39,15 +40,16 @@
 ```
 RESUME PROMPT — paste into new session:
 Read ENTRY.md, RULES.md, RULES_HINTS.md, session_track.md, and development_phases_entry.md.
-Continue from session 001 (docs/sessions/session-001.md).
-Next task: PHASE 01 — Requirements & Domain Analysis (docs/phases/phase-01-analysis/TODO.md).
-Last completed: PHASE 00 — Initialization & Governance (status BLOCKED, not COMPLETE).
-Blockers: BLK-01 — verbatim "PROJECT WHITEBOARD METHODOLOGY" appendix text not supplied
-          for memory.md; obtain it from the user or agree an alternative before closing
-          Phase 00. Also open: F-005, F-006 (HIGH, Phase 01), F-012 (HIGH, Phase 03).
+Continue from session 002 (docs/sessions/session-002.md); session 001 = Phase 00 bootstrap.
+Next task: PHASE 01 — Requirements & Domain Analysis (docs/phases/phase-01-analysis/TODO.md)
+  — requires explicit user instruction; do not start automatically.
+Last completed: PHASE 00 — Initialization & Governance, status PASSED (GO, 41/41) after
+  the 2026-09-26 reconciliation; BLK-01 closed (appendix restored verbatim in memory.md).
+Deferred, still open: F-005 -> Phase 01 (external systems), F-006 -> Phase 01/02
+  (stakeholder/sign-off), F-012 -> Phase 03 (CI/scanners). None blocks Phase 00.
 Run: python senior-rules/validators/validate.py .   and report its output before starting.
 Scope fence: RULES_HINTS.md SYS-01 — no business implementation until Phase 01 AND
-             Phase 02 exit gates have both PASSED.
+             Phase 02 exit gates have both PASSED. Do not push without asking.
 ```
 
 ---
@@ -73,7 +75,8 @@ session file (`SES-03`).
 | Session | File |
 |---|---|
 | 001 | [`docs/sessions/session-001.md`](docs/sessions/session-001.md) |
-| 002+ | *not yet created* |
+| 002 | [`docs/sessions/session-002.md`](docs/sessions/session-002.md) |
+| 003+ | *not yet created* |
 
 ---
 

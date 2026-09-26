@@ -147,7 +147,7 @@ Unresolved. **Do not answer these by inventing content.** (SYS-03)
 
 | ID | Question | Area | Target phase |
 |---|---|---|---|
-| `BLK-01` | The verbatim "APPENDIX: PROJECT WHITEBOARD METHODOLOGY" was not supplied. What is its text? | Governance | **BLOCKED — needs user** |
+| `BLK-01` | ~~The verbatim "APPENDIX: PROJECT WHITEBOARD METHODOLOGY" was not supplied. What is its text?~~ | Governance | **`CLOSED` 2026-09-26** — restored verbatim under *Permanent Project Management Methodology*; see the provenance record there |
 | `OQ-01` | Who are the stakeholders, and who signs off requirements? | Requirements | 01 |
 | `OQ-02` | Are the six candidate external systems real and reachable? | Integration | 01 / 02 |
 | `OQ-03` | What is the violation catalogue, fine tariff and penalty-point threshold? *(must not be invented)* | Domain | 01 |
@@ -223,32 +223,50 @@ Full list with owners: `docs/01-requirements.md` §Open Questions, `architecture
 **Current resume point:** `docs/sessions/session-001.md` · next task = **PHASE 01 —
 Requirements & Domain Analysis** (do not start automatically during Phase 00).
 
-**Known blocker to re-check first:** `BLK-01` (see *Open Questions*).
+**Known blocker, re-checked:** `BLK-01` — **`CLOSED`** (appendix restored verbatim; see
+*Permanent Project Management Methodology* + `Audit.md` `F-004`). Remaining Phase 00-relevant
+blockers: **none** — `F-005`/`F-006`/`F-012` are `DEFERRED BY PHASE DESIGN` (Phases 01/01-02/03).
 
 ---
 
 # Permanent Project Management Methodology
 
-> **STATUS: `BLOCKED` — `BLK-01`.**
+> **STATUS: `RESOLVED` — `BLK-01` closed 2026-09-26 (reconciliation session).**
 >
-> **Required content:** the complete **APPENDIX — PROJECT WHITEBOARD METHODOLOGY**, to be
-> inserted into this section **exactly and verbatim** (not summarized, not rewritten, no
-> part removed), per the Phase 00 specification, Section 10 (`memory.md`).
->
-> **Why it is not here:** the appendix text was **not included** in the Phase 00 instruction
-> that was executed, and a repository-wide search for the token `WHITEBOARD` across all
-> three external source repositories returned **zero matches** (see `CF-07`). Authoring a
-> substitute would violate the explicit constraint *"Do not summarize it. Do not rewrite it.
-> Do not remove any part."*, and inventing it would violate `GEN-03` / `SYS-03`.
->
-> **What unblocks it:** the user supplies the verbatim appendix text. The text is then
-> inserted directly under this notice, and this `BLOCKED` banner is removed in the same
-> commit, with `BLK-01` closed in `Audit.md` and `session_track.md`.
->
-> **Interim operating methodology** for any session that needs one: the Phase 00 session
-> follows the Daily Session Protocol in `ENTRY.md` / `AGENTS.md`, and the governing
-> methodology authority remains `senior-rules/core/` (`00` meta-rules through `11`
-> communication) plus this project's `RULES_HINTS.md`. That interim note is *not* a
-> replacement for the required appendix.
+> The complete **APPENDIX: PROJECT WHITEBOARD METHODOLOGY** is inserted below **verbatim**
+> — no summary, no paraphrase, no invented section, no part removed.
 
-<!-- APPENDIX: PROJECT WHITEBOARD METHODOLOGY — TO BE INSERTED VERBATIM HERE (BLK-01) -->
+## APPENDIX: PROJECT WHITEBOARD METHODOLOGY
+
+APPENDIX: PROJECT WHITEBOARD METHODOLOGY
+*Follow these overarching operational guidelines throughout the project lifecycle.*
+
+**1. Initial Steps & Daily Workflow (Right Panel)**
+*  Analysis & Foundation: Always navigate to the `docs/` directory to conduct analysis. Establish and approve the core execution plan (Architecture Model).
+*  Daily Kickoff: Begin every work session by assessing the project state—understand what has been completed and what is pending.
+*  Execution Start:
+    * Identify missing tasks for the current Phase.
+    * Gather and inventory all execution files related to the specific Phase.
+    * Audit and review the `Todo` lists specific to the current Phase.
+*  Delivery & Finalization:
+    * Select a specific Phase to focus on.
+    * Build the software components for that Phase.
+    * Update, compile, and synchronize all Markdown (`.md`) documentation files accordingly.
+
+**2. Core Reference Files & System Structure (Center Panel)**
+*  **Primary Reference Files (`.md`):** Must consistently maintain `mindmap.md` (concept mapping), `Audit.md` (audit & review logging), and `memory.md` (cumulative system context).
+*  **Tracking & Routing:** Maintain a clear task-tracking structure, plan UI distributions (Home, About, etc.), configure SEO standards, and maintain an inventory of completed files.
+
+**3. Documentation Folder Specifications (`docs/` - Left Panel)**
+*  **Analysis & Design Files:** Must include the Implementation Plan, Use Case Scenarios, Use Case Actions, Flow of Action, Flow of Events, Data Flow, Website Structure, and UI/UX Specifications.
+*  **Mandatory Additions:** Ensure all other required `.md` files are present, prominently feature the `architecture.md` file, and maintain a dedicated `todo_[phase].md` file for every single development phase.
+
+---
+
+> **Provenance & verbatim-integrity record (annotation — not part of the appendix body):**
+>
+> - **Source used:** `D:\IT-Level-4\IT-Level4-part1\course\Systems-Integration-and-Architecture-course\lab\Traffic-and-Transport-Management-System\memory.md` §8, which is self-identified there as *"VERBATIM COPY — permanent operational law. Do not edit, summarize, or paraphrase. This is the full appendix from the project initialization command, preserved exactly."*
+> - **Why a source was needed:** the appendix text was not present in the reconciliation session's conversation context, in this repository, or in the session/temp storage; `CF-07` (0 matches across the three external source repos) remains a true record of *those* repos.
+> - **Corroboration:** an independent earlier verification run logged 10 signature phrases from the initialization command; **9 of 10 matched this text exactly** (the 10th, `Mandatory Additions: Ensure all other required`, is present at the final bullet above — that check had targeted a different file).
+> - **Trailing instruction text preserved verbatim from the same source line** (prompt text that runs on after the appendix's last sentence in that copy; it is the prompt's `memory.md` description + copy directive, not methodology body): *"…maintain an inventory of completed files.`memory.md: Initialize the cumulative system context, defining the tech stack, core objectives, and guiding engineering rules. CRITICAL: You must copy the entire "APPENDIX: PROJECT WHITEBOARD METHODOLOGY" from this prompt directly into memory.md so it remains the permanent operational law for all future sessions.`"*
+> - Nothing above the line was summarized, rewritten or removed (`GEN-03`, `SYS-03`).

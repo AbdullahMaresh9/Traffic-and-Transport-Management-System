@@ -40,7 +40,7 @@ Contingency · Trigger · Status (`Active` / `Mitigated` / `Occurred` / `Closed`
 
 | ID | Risk | P | I | Score | Level | Owner | Mitigation | Trigger | Status |
 |---|---|---|---|---|---|---|---|---|---|
-| `RISK-001` | The required "PROJECT WHITEBOARD METHODOLOGY" appendix is never supplied, so Phase 00 cannot close cleanly. | 3 | 4 | **12** | `HIGH` | User | Obtain text; otherwise agree an explicit, documented alternative (`BLK-01`) | No response after next session | **Active** |
+| `RISK-001` | ~~The required "PROJECT WHITEBOARD METHODOLOGY" appendix is never supplied, so Phase 00 cannot close cleanly.~~ | 3 | 4 | **12** → **0** | `HIGH` → **`CLOSED`** | AI / governance | **Closed 2026-09-26:** appendix restored verbatim into `memory.md` with a provenance record; `BLK-01`/`F-004` closed. | 2026-09-26 |
 | `RISK-002` | No stakeholder/supervisor identified → requirements cannot be baselined, phases cannot be signed off. | 4 | 5 | **20** | `CRITICAL` | User | Identify supervisor and sign-off route before Phase 01 gate | Phase 01 gate arrives without an owner | **Active** |
 | `RISK-003` | Requirement fabrication: plausible-but-invented requirements (violation catalogue, tariffs, roles) enter the baseline. | 3 | 5 | **15** | `HIGH` | AI + reviewer | `SYS-03`; every claim labelled; `OPEN QUESTION` instead of guessing | A document shows a specific tariff/threshold/role with no source | **Active** |
 | `RISK-004` | External systems (6 candidate boundaries) do not exist or are unreachable → integration objective cannot be demonstrated. | 4 | 4 | **16** | `HIGH` | Requirements analyst | Confirm in Phase 01; fall back to simulators (`OQ-12`) before Phase 05 | Phase 01 closes with all 6 unconfirmed | **Active** |

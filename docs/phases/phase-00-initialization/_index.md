@@ -1,6 +1,6 @@
 # Phase 00 — Initialization & Governance
 
-**Phase ID:** `PH-00` · **Status:** `BLOCKED` (execution complete; exit gate not passable)
+**Phase ID:** `PH-00` · **Status:** `PASSED` (exit gate `GO` — 41/41 checks, reconciled 2026-09-26)
 · **Registry:** [`../../development_phases_entry.md`](../../../development_phases_entry.md)
 
 ## Objective
@@ -15,11 +15,11 @@ functionality**.
 | Field | Value |
 |---|---|
 | Phase ID | `PH-00` |
-| Status | **`BLOCKED`** — execution `DONE`, exit gate `NO-GO` |
+| Status | **`PASSED`** — execution `DONE`, exit gate `GO` (41/41), reconciled 2026-09-26 |
 | Rule set | `senior-rules/` v`2.0.0` (vendored, unmodified core) + root [`../../RULES_HINTS.md`](../../../RULES_HINTS.md) |
 | Scope fence | No driver/vehicle/license/violation/fine/accident workflows, no business APIs, DB models, services, dashboards or production source (`SYS-01`) |
-| Owner | AI agent (OpenCode) · Human sign-off **`BLOCKED` — no supervisor identified (`F-006`)** |
-| Session | [`../../docs/sessions/session-001.md`](../../sessions/session-001.md) |
+| Owner | AI agent (OpenCode) · Human sign-off authority still `OPEN QUESTION` (`F-006`, **deferred → Phase 01/02**; does not block Phase 00) |
+| Session | [`../../docs/sessions/session-001.md`](../../sessions/session-001.md) + [`session-002.md`](../../sessions/session-002.md) (reconciliation) |
 
 ## CORE-03 artifact mapping for this phase
 
@@ -44,9 +44,12 @@ functionality**.
 
 ## Exit gate
 
-Evaluated item-by-item with evidence in [`AUDIT.md`](AUDIT.md) §5. Result: **`NO-GO`** —
-`F-004` (`CRITICAL`, verbatim methodology appendix `BLOCKED`) and `F-005`/`F-006`/`F-012`
-(`HIGH`) remain open. Per `AUD-02` a phase may not close with open `CRITICAL`/`HIGH` findings.
+Evaluated item-by-item with evidence in [`AUDIT.md`](AUDIT.md) §5. Result: **`GO`** —
+41/41 checks `PASS` after the 2026-09-26 reconciliation: `F-004`/`BLK-01` `FIXED` (verbatim
+appendix restored into `memory.md`), and `F-005`/`F-006`/`F-012` (`HIGH`) classified
+**`DEFERRED BY PHASE DESIGN`** (Phases 01 / 01-02 / 03) with target phase, owner, rationale
+and required-by gate in root `Audit.md` §3.1. Per `AUD-02` a phase may not close with open
+`CRITICAL`/`HIGH` findings *applicable to it* — zero remain applicable to Phase 00.
 
 ## Files in this phase folder
 
